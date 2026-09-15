@@ -1,3 +1,11 @@
+University: ITMO University  
+Faculty: FTMI  
+Course: Введение в веб технологии  
+Year: 2026/2027  
+Group: U4225  
+Author: Soldatov Egor  
+Lab: Lab2
+
 **1. Подготовка проекта и настройка GitHub Actions**
 В репозитории созданы файлы: app.py, requirements.txt, Dockerfile, docker-build.yml  
 <img width="561" height="1027" alt="image" src="https://github.com/user-attachments/assets/0eca340b-67d3-4eed-97e7-4b7b257c891a" />  
@@ -13,3 +21,16 @@
 **2. Настройка секретов**  
 Добавлены секреты с юзернеймом и паролем от Docker Hub  
 <img width="1194" height="279" alt="image" src="https://github.com/user-attachments/assets/2532109e-8e80-45e4-851a-95f663f387d4" />
+
+**3. Проверка пайплайна**
+Пайплайн выполнен (наконец-то)  
+<img width="1902" height="916" alt="image" src="https://github.com/user-attachments/assets/a80618f2-e96e-4ab4-9941-7bcaa8e1b257" />  
+Docker Hub заменил заглавную букву в юзернейме на строчную, так что пришлось повозиться с секретом и файлом docker-build.yml
+
+Образ есть на Docker Hub  
+<img width="1896" height="904" alt="image" src="https://github.com/user-attachments/assets/506fbe89-a061-4941-ba01-8c7825ad0c8d" />  
+
+После внесения изменений в app.py, коммита и пуша на GitHub Actions запустился новый пайплайн, а образ в Docker Hub обновился
+
+**Вывод**  
+В ходе лабораторной работы был настроен полноценный CI/CD пайплайн с использованием GitHub Actions и Docker Hub.
