@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: Setnothway/my-flask-app:latest
+          tags: setnothway/my-flask-app:latest
 
       - name: Deploy notification
         run: echo "Image successfully pushed to Docker Hub!"
